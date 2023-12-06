@@ -11,5 +11,5 @@ class ThingForm(forms.ModelForm):
         fields = ['name', 'description', 'quantity']
         widgets = {
             'description': forms.Textarea(attrs={'cols': 40, 'rows': 5}),
-            'quantity': forms.NumberInput(attrs={'min': 0, 'max': 100}),
+            'quantity': forms.NumberInput()
         }
