@@ -1,10 +1,9 @@
-
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Things</title>
+    <title>Thing Form</title>
 </head>
 <body>
-    <h1>Things</h1>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
@@ -12,3 +11,4 @@
     </form>
 </body>
 </html>
+
